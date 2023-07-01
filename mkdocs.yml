@@ -1,0 +1,115 @@
+---
+# Project Information
+site_name: pycommons-{{project_name}}
+site_author: Shashank Sharma
+site_description: {{project_description}}
+remote_branch: gh-pages
+remote_name: origin
+site_url: https://pycommons.github.io/pycommons-{{project_name}}
+strict: false
+
+# Repository information
+repo_name: pycommons/pycommons-{{project_name}}
+repo_url: https://github.com/pycommons/pycommons-{{project_name}}
+edit_uri: edit/master/docs/
+
+# Copyright
+copyright: Copyright &copy; 2020 Shashank Sharma
+
+extra_css: [ ]
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - attr_list
+  - markdown_include.include:
+      base_path: docs
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+      # Configuration
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+  language: en
+  base_url: https://github.com/pycommons/pycommons-{{project_name}}
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+# Footer
+extra:
+  config_override: false
+  doc_owner: Shashank Sharma
+  doc_owner_shortid: shashankrnr32@gmail.com
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shashankrnr32
+      name: shashankrnr32 on GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/shashankrnr32
+      name: shashankrnr32 on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/shashankrnr32
+      name: shashankrnr32 on LinkedIn
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@shashankrnr32
+      name: shashankrnr32 on fosstodon
+
+plugins:
+  - search
+  - awesome-pages
+  - mkdocstrings:
+      watch:
+        - pycommons
+
+use_directory_urls: true
+
+# Page tree
+nav:
+  - PyCommons {{project_name}}:
+      - Home: index.md
+  - ...
+
