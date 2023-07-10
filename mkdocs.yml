@@ -2,7 +2,7 @@
 # Project Information
 site_name: pycommons-tests
 site_author: Shashank Sharma
-site_description: {{project_description}}
+site_description: pycommons-tests package provides common helper and utilities to write unittests in python.
 remote_branch: gh-pages
 remote_name: origin
 site_url: https://pycommons.github.io/pycommons-tests
