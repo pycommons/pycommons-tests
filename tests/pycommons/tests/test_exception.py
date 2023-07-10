@@ -4,7 +4,6 @@ from pycommons.tests.exception import raises
 
 
 class TestRaisesAnnotation(TestCase):
-
     @raises(RuntimeError)
     def test_raises_exception(self):
         raise RuntimeError("")
