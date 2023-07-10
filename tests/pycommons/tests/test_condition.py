@@ -7,7 +7,6 @@ from pycommons.tests.condition import flaky
 
 
 class TestFlakyTest(TestCase):
-
     def setUp(self) -> None:
         logging.root.setLevel(logging.DEBUG)
         logging.root.addHandler(logging.StreamHandler(sys.stdout))
