@@ -5,14 +5,12 @@ _T = TypeVar("_T")
 
 
 class Matcher(ABC, Generic[_T]):
-
     @abstractmethod
     def match(self, value: _T) -> bool:
         ...
 
 
 class AnyOfMatcher(Matcher[_T]):
-
     def __init__(self, *args: Matcher[_T]):
         self._matchers = args
 
@@ -24,7 +22,6 @@ class AnyOfMatcher(Matcher[_T]):
 
 
 class AllOfMatcher(Matcher[_T]):
-
     def __init__(self, *args: Matcher[_T]):
         self._matchers = args
 

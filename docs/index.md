@@ -7,7 +7,7 @@
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-{{project_description}}
+pycommons-tests package provides common helper and utilities to write unittests in python.
 
 Visit the [documentation](https://pycommons.github.io/pycommons-tests) to view
 the usage of each and every class and feature provided by this library.
