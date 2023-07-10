@@ -1,16 +1,16 @@
 ---
 # Project Information
-site_name: pycommons-{{project_name}}
+site_name: pycommons-tests
 site_author: Shashank Sharma
 site_description: {{project_description}}
 remote_branch: gh-pages
 remote_name: origin
-site_url: https://pycommons.github.io/pycommons-{{project_name}}
+site_url: https://pycommons.github.io/pycommons-tests
 strict: false
 
 # Repository information
-repo_name: pycommons/pycommons-{{project_name}}
-repo_url: https://github.com/pycommons/pycommons-{{project_name}}
+repo_name: pycommons/pycommons-tests
+repo_url: https://github.com/pycommons/pycommons-tests
 edit_uri: edit/master/docs/
 
 # Copyright
@@ -60,7 +60,7 @@ theme:
     - navigation.instant
     - navigation.tabs
   language: en
-  base_url: https://github.com/pycommons/pycommons-{{project_name}}
+  base_url: https://github.com/pycommons/pycommons-tests
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -109,7 +109,7 @@ use_directory_urls: true
 
 # Page tree
 nav:
-  - PyCommons {{project_name}}:
+  - PyCommons tests:
       - Home: index.md
   - ...
 

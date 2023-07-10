@@ -1,4 +1,4 @@
-"""PyCommons {{project_name}} namespace."""
+"""PyCommons tests namespace."""
 from __future__ import annotations
 
 from importlib_metadata import PackageNotFoundError, version

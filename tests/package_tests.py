@@ -1,8 +1,6 @@
-"""Test module for pycommons-{{project_name}}."""
+"""Test module for pycommons-tests."""
 
-from tests.pycommons
-
-{{project_name}} import __author__, __email__, __version__
+from pycommons.tests import __author__, __email__, __version__
 
 
 def test_project_info():

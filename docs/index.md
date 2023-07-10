@@ -1,15 +1,15 @@
-# pycommons-{{project_name}}
+# pycommons-tests
 
-[![PyPI](https://img.shields.io/pypi/v/pycommons-{{project_name}})](https://pypi.org/project/pycommons-{{project_name}}/)
-![versions](https://img.shields.io/pypi/pyversions/pycommons-{{project_name}}.svg)
-![PyPI - License](https://img.shields.io/pypi/l/pycommons-{{project_name}})
-![PyPI - Downloads](https://img.shields.io/pypi/dw/pycommons-{{project_name}})
+[![PyPI](https://img.shields.io/pypi/v/pycommons-tests)](https://pypi.org/project/pycommons-tests/)
+![versions](https://img.shields.io/pypi/pyversions/pycommons-tests.svg)
+![PyPI - License](https://img.shields.io/pypi/l/pycommons-tests)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/pycommons-tests)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 {{project_description}}
 
-Visit the [documentation](https://pycommons.github.io/pycommons-{{project_name}}) to view
+Visit the [documentation](https://pycommons.github.io/pycommons-tests) to view
 the usage of each and every class and feature provided by this library.
 
 ## Get Started
@@ -18,14 +18,14 @@ To get started with this library, you can install this in your virtual environme
 by running
 
 ```shell
-pip install pycommons-{{project_name}}
+pip install pycommons-tests
 ```
 
 With [poetry](https://python-poetry.org/), you can run the following command to add the library to your
 project
 
 ```shell
-poetry add pycommons-{{project_name}}
+poetry add pycommons-tests
 ```
 
 ## License

@@ -1,12 +1,14 @@
 import dataclasses
 import functools
-from typing import Any, Optional, List
+from typing import Any, Optional, Callable
+from unittest import TestCase
 
 
 @dataclasses.dataclass
 class TestData:
     data: Any
     expected: Any
+    enabled: bool = True
 
     message: Optional[str] = None
 
@@ -17,13 +19,14 @@ class TestData:
         )
 
 
-def cases(testcases: List[TestData]):
-    def decorator(f):
+def cases(*testcases: TestData):
+    def decorator(f: Callable):
         @functools.wraps(f)
-        def wrapped(self):
+        def wrapped(self: TestCase):
             for case in testcases:
-                with self.subTest(case.get_message()):
-                    f(self, case)
+                if case.enabled:
+                    with self.subTest(case.get_message()):
+                        f(self, case)
 
         return wrapped
 

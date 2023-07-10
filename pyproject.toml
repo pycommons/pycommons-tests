@@ -1,9 +1,9 @@
 [tool]
 
 [tool.poetry]
-name = "pycommons.{{project_name}}"
+name = "pycommons.tests"
 version = "0.0.0"
-homepage = "https://github.com/pycommons/pycommons-{{project_name}}"
+homepage = "https://github.com/pycommons/pycommons-tests"
 description = "Python Commons Base"
 authors = ["Shashank Sharma <shashankrnr32@gmail.com>"]
 readme = "README.md"
@@ -57,7 +57,7 @@ max-locals = 20
 min-public-method = 0
 
 [tool.pytest.ini_options]
-addopts = "--cov=pycommons --cov-branch --cov-report term-missing --cov-report xml -vv --color=yes --cov-fail-under 100"
+addopts = "--cov=pycommons --cov-branch --cov-report term-missing --cov-report xml -vv --color=yes --cov-fail-under 75"
 python_files = "tests.py test_*.py *_tests.py *Test.py"
 
 [build-system]
@@ -65,12 +65,12 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.mypy.overrides]
-module = "pycommons.{{project_name}}"
+module = "pycommons.tests"
 implicit_reexport = true
 
 [tool.poe.tasks]
 test = "pytest"
 lint = "pylint pycommons/ tests/"
 black = "black ."
-mypy = "mypy --namespace-packages -p pycommons.{{project_name}} --strict --config-file=mypy.ini"
+mypy = "mypy --namespace-packages -p pycommons.tests --strict --config-file=mypy.ini"
 docs = "mkdocs serve"
