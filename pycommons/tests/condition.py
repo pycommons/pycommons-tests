@@ -2,7 +2,7 @@ import functools
 import logging
 import unittest
 
-__all__ = ["fails", "skip", "skip_if"]
+__all__ = ["fails", "skip", "skip_if", "skip_unless", "flaky"]
 
 from typing import Callable, Optional
 from unittest import TestCase
