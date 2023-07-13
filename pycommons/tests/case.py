@@ -27,23 +27,25 @@ class TestCase(unittest.TestCase):
 
     def assertNotSame(self, expected: Any, actual: Any, msg: Optional[str] = None):
         """
-       Assert if the expected object is not the same as the actual object, i.e. their ids do not match.
+        Assert if the expected object is not the same as the actual object,
+        i.e. their ids do not match.
 
-       Args:
-           expected: Expected object
-           actual: Actual object
-           msg: message
+        Args:
+            expected: Expected object
+            actual: Actual object
+            msg: message
 
-       Returns:
-           None
-       """
+        Returns:
+            None
+        """
         if id(expected) == id(actual):
             self.fail(msg)
 
     def assertThat(self, matcher: Matcher[Any], actual: Any, msg: Optional[str] = None):
         """
-        Provides matcher type assertion. A matcher is a functional interface with a single abstract method
-        `match` that takes an object (`actual`) and returns True if the matching is successful.
+        Provides matcher type assertion. A matcher is a functional interface
+        with a single abstract method `match` that takes an object (`actual`)
+        and returns True if the matching is successful.
 
         Args:
             matcher: A matcher object
